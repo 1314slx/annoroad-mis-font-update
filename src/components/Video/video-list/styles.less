@@ -1,0 +1,112 @@
+@import "~antd/lib/style/themes/default.less";
+.video_wapper{
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  ul,li{list-style: none;float: left;}
+  ul{
+    padding-left: 0px;
+    width:100%;
+    margin-bottom: 0px !important;
+
+    li{
+      width:14.28%;
+      line-height: 45px;
+      height: 45px;
+      display: block;float: left;
+      border-top: 1px solid rgb(232, 232, 232);
+      text-indent: 12px;
+    }
+    li:nth-child(6){
+      width: 20%;
+      :global{
+        .ant-progress-outer{
+          width:80% !important;
+        }
+      }
+    }
+
+    li:first-child{
+      width: 8%;
+    }
+    li:last-child{
+      width: 8%;
+      border-bottom:0px solid rgb(232, 232, 232);
+    }
+    li:nth-child(2){
+      width:20%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-right: 3px;
+    }
+
+  }
+  ul:hover{
+    background-color: rgb(230, 247, 255);
+  }
+  ul:last-child{
+    border-bottom:0px solid rgb(232, 232, 232);
+  }
+  .editForm{
+      border:3px solid red !important;
+    :global{
+      .ant-form-item-label label{
+        color:red !important;
+        border:1px solid red;
+      }
+    }
+  }
+  /*:global{
+    .ant-form-horizontal{
+
+      .ant-form-item-label label{
+        color:red !important;
+      }
+      .ant-form-item label:before{
+        content: "*";
+        margin: 0 8px 0 2px;
+        position: relative;
+        top: -0.5px;
+        color:red;
+      }
+    }
+
+  }*/
+}
+.video_wapper:last-child{
+  border-bottom:1px solid rgb(232, 232, 232);
+}
+.editForm{
+  :global{
+    .ant-form-item:nth-child(1),.ant-form-item:nth-child(2){
+      .ant-form-item-label label:before{
+        content: "*";
+        margin: 0 8px 0 2px;
+        position: relative;
+        top: -0.5px;
+        color:red;
+      }
+    }
+  }
+}
+.videoTable{
+  td{
+    padding: 4px 8px !important;
+  }
+  table tr td{
+    padding: 4px 8px !important;
+  }
+
+  td:nth-child(2),td:nth-child(3){
+    width: 14.5%;
+    span{
+      display: block;
+      width: 100%;
+      word-break: break-all;
+      text-overflow: ellipsis;
+      height: 32px;
+      line-height: 32px;
+      overflow: hidden;
+    }
+  }
+}

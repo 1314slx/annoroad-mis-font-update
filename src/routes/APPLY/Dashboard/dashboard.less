@@ -1,0 +1,411 @@
+@import "~antd/lib/style/themes/default.less";
+@import "../../../utils/utils.less";
+.iconGroup {
+  i {
+    transition: color 0.32s;
+    color: @text-color-secondary;
+    cursor: pointer;
+    margin-left: 16px;
+    &:hover {
+      color: @text-color;
+    }
+
+  }
+}
+
+.rankingList {
+  margin: 25px 0 0;
+  padding: 0;
+  list-style: none;
+  li {
+    .clearfix();
+    margin-top: 16px;
+    span {
+      color: @text-color;
+      font-size: 14px;
+      line-height: 22px;
+    }
+    span:first-child {
+      background-color: @background-color-base;
+      border-radius: 20px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 24px;
+      height: 20px;
+      line-height: 20px;
+      width: 20px;
+      text-align: center;
+    }
+    span.active {
+      //background-color: @primary-color;
+      background-color: #314659;
+      color: #fff;
+    }
+    span:last-child {
+      float: right;
+    }
+  }
+}
+
+.salesExtra {
+  display: inline-block;
+  margin-right: 24px;
+  a {
+    color: @text-color;
+    margin-left: 24px;
+    &:hover {
+      color: @primary-color;
+    }
+    &.currentDate {
+      color: @primary-color;
+    }
+  }
+}
+/*canvas{height:200px  !important;;width:auto  !important;border:1px solid red;}*/
+.dashList > div {
+  padding-left: 24px !important;
+  padding-right: 0px !important;
+}
+
+.salesCard {
+  .salesRank {
+    padding: 0 0 32px 72px;
+    width: 71%;
+    float: right;
+  }
+  :global {
+    .ant-tabs-bar {
+      padding-left: 16px;
+      .ant-tabs-nav .ant-tabs-tab {
+        padding-top: 16px;
+        padding-bottom: 14px;
+        line-height: 24px;
+      }
+    }
+    .ant-tabs-extra-content {
+      padding-right: 24px;
+      line-height: 55px;
+    }
+    .ant-card-head {
+      position: relative;
+    }
+  }
+}
+
+.salesCardExtra {
+  height: 68px;
+}
+
+.salesTypeRadio {
+  position: absolute;
+  left: 24px;
+  bottom: 15px;
+}
+
+.offlineCard {
+  :global {
+    .ant-tabs-ink-bar {
+      bottom: auto;
+    }
+    .ant-tabs-bar {
+      border-bottom: none;
+    }
+    .ant-tabs-nav-container-scrolling {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .ant-tabs-tab-prev-icon:before {
+      position: relative;
+      left: 6px;
+    }
+    .ant-tabs-tab-next-icon:before {
+      position: relative;
+      right: 6px;
+    }
+  }
+
+  :global(.ant-tabs-tab-active) h4 {
+    color: @primary-color;
+  }
+}
+
+.trendText {
+  margin-left: 8px;
+  color: @heading-color;
+}
+
+@media screen and (max-width: @screen-lg) {
+  .salesExtra {
+    display: none;
+  }
+
+  .rankingList {
+    li {
+      span:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .rankingTitle {
+    margin-top: 16px;
+  }
+
+  .salesCard .salesBar {
+    padding: 16px;
+  }
+}
+@media screen and (max-width: @screen-sm) {
+  .salesExtraWrap {
+    display: none;
+  }
+
+  .salesCard {
+    :global {
+      .ant-tabs-content {
+        padding-top: 30px;
+      }
+    }
+  }
+}
+
+@import "~antd/lib/style/themes/default.less";
+
+.advancedForm + div {
+  padding-bottom: 64px;
+}
+.deployTestWar {
+  table {
+    width: 1500px !important;
+  }
+}
+.operatorSpan:last-child i {
+  display: none;
+}
+
+.advancedForm {
+  :global {
+    .ant-form .ant-row:last-child .ant-form-item {
+      margin-bottom: 24px;
+    }
+    .ant-table td {
+      transition: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .rankingTitle {
+    margin-top: 16px;
+  }
+
+  .salesCard .salesBar {
+    padding: 16px;
+  }
+}
+
+.newBtn {
+  display: block;
+  margin-top: -59px;
+}
+
+.businessTable {
+  margin-top: 30px;
+}
+
+.paginationBox {
+  padding-top: 24px;
+}
+
+.cardMargin {
+  margin-top: 30px;
+}
+
+.basicSpan {
+  font-size: 12px !important;
+  font-weight: normal !important;
+  padding-left: 80px;
+  margin-top: -30px;
+  display: block;
+  white-space: normal;
+  color: #999;
+  min-height: 45px;
+}
+
+.industrySpan {
+  font-size: 12px !important;
+  font-weight: normal !important;
+  padding-left: 80px;
+  margin-top: -20px;
+  display: block;
+  white-space: normal;
+  color: #999;
+  min-height: 45px;
+}
+
+.btnBox {
+  margin-top: 10px;
+}
+
+.infoBtnBox {
+  button {
+    margin-right: 10px;
+  }
+}
+// :global {
+//   .ant-card-bordered {
+//     border: 0;
+//   }
+//   .ant-form-item-control {
+//     line-height: 32px !important;
+//   }
+//   .ant-col-xl-offset-1 {
+//     margin-left: 4% !important;
+//   }
+//   .ant-col-xl-7 {
+//     width: 30.6666667% !important;
+//   }
+
+//   .ant-col-md-8 {
+//     display: block;
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+//     width: 33.33333333% !important;
+//   }
+//   .index__newBtn___1Sj0L {
+//     float: left;
+//   }
+
+//   /*表格对齐样式*/
+//   .ant-col-xl-7 {
+//     width: 33.33333333%;
+//     display: inline-block !important;
+//   }
+
+//   .ant-form-item {
+//     display: flex;
+//   }
+//   .ant-form-item-label {
+//     /*overflow: hidden;
+//     white-space: nowrap;
+//     width: auto;
+//     line-height: 32px;
+//     padding-right: 8px;
+//     display: inline-block;
+//     vertical-align: middle;*/
+//     border: 0px solid green;
+//   }
+
+//   .ant-col-16 {
+//     flex: 1 1;
+//   }
+//   .ant-col-xl-7:nth-child(2) .ant-form-item {
+//     margin-left: 16px;
+//     margin-right: 16px;
+//   }
+// }
+.edit_word a {
+  margin-right: 10px;
+}
+.edit_word a:last-child {
+  margin-right: 0px;
+}
+
+
+.rankingTitle {
+  font-size: 16px;
+  font-weight: 800;
+}
+.rankingList {
+  padding-left: 0px;
+}
+.rankingList li {
+  list-style: none;
+  margin-top: 16px;
+}
+.rankingList li span {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  line-height: 22px;
+}
+.rankingList li span:first-child {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 24px;
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+  text-align: center;
+}
+.rankingList li span:last-child {
+  float: right;
+}
+.rankingList li span.active {
+  background-color: #314659;
+  color: #fff;
+}
+.rankhList {
+  background: #ffffff;
+  margin: 0px !important;
+  padding: 24px;
+}
+
+.toolsIntroduction {
+  margin-top: 32px !important;
+}
+
+
+
+.topWar {
+  border: 0px;
+  margin: 0 !important;
+  :global{
+    .ant-col-md-5{width:20% !important;}
+   .ant-col-md-5:first-child  {
+      padding-left: 0px  !important;
+    }
+    .ant-col-md-5:nth-child(5){
+      padding-right: 0px  !important;
+    }
+    .ant-card-bordered {
+      border: 1px solid #e8e8e8!important;
+    }
+    .pull-left {
+    }
+    .y-center {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    a {
+      color: unset;
+    }
+    a:hover {
+      color: #40a9ff;
+    }
+  
+  
+    .clear > h2 {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .anticon svg {
+      font-size: 3em;
+    }
+  }
+}
+
+.word_overite{ width: 50%;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block;}
+.salesCard .salesBar{
+  :global{
+    .g2-tooltip-list{
+      width:7em !important;
+    }
+  }
+}

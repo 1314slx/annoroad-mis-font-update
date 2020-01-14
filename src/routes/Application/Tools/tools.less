@@ -1,0 +1,223 @@
+@import "~antd/lib/style/themes/default.less";
+.linkIcon i {
+  font-size: 72px;
+  margin-bottom: 24px;
+}
+.cardMeta {
+  border: 0;
+  cursor: pointer;
+}
+.metaAvatar {
+  padding-right: 16px;
+  float: left;
+  span {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+  }
+  img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    -webkit-border-radius: 48%;
+    -moz-border-radius: 48%;
+    border-radius: 48%;
+  }
+}
+.metaDetail {
+  overflow: hidden;
+  .privateWord{
+    float: right;width: 5em;text-align: center;margin-right:0;
+  }
+}
+.meta_title {
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 1335px) and (max-width: 1680px) {
+  .meta_title, .meta_title a{
+    font-size: 14px !important;
+  }
+}
+.meta_content {
+  overflow: hidden;
+  word-break: break-all;
+  width: 100%;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  height: 64px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color:rgba(0, 0, 0, 0.45);
+  }
+.expect {
+  height: 63vh;
+  text-align: center;
+  background: #ffffff;
+  margin: 0px;
+  margin-left: 12px;
+  margin-right: 12px;
+  i {
+    font-size: 80px;
+    margin-top: 20vh;
+    margin-bottom: 30px;
+  }
+}
+.coverCardList {
+  .allTools{color:red;}
+  :global{
+
+    .gutter-example{margin-top: 24px !important;}
+    .index__tagSelect___2-COz .ant-tag-checkable{height: 32px !important;;line-height: 32px !important;}
+    .gutter-example{background: #f0f2f5; margin-top: 0px !important; padding-top: 24px;}
+    .gutter-example .ant-col-8 a{color:rgba(0, 0, 0, 0.85);font-size: 16px;line-height: 23px;}
+    .ant-card-wider-padding .ant-card-body{
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;}
+    .ant-layout-content{border:0px}
+  }
+
+}
+.gutter-row {
+  border: 0px solid red;
+  padding-left: 20px;
+}
+.toolsIntroduction {
+  margin-top: 32px !important;
+}
+.salesBar .paraTitle {
+  line-height: 32px;
+  border-bottom: 1px solid rgba(233, 233, 233, 1);
+  margin-left: -32px !important;
+  margin-right: -32px !important;
+  padding: 2px 32px 2px 32px;
+}
+.salesBar .paraTitle a {
+  float: right;
+}
+.extraWrap p {
+  margin-bottom: 0;
+  margin-top: 24px;
+}
+.btnBox {
+  text-align: center;
+}
+.btnBox button {
+  margin-right: 8px;
+}
+.tagSelect tag {
+  height: 32px !important;
+  line-height: 32px !important;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .tagContent_List{
+    border:1px solid red;
+  }
+  .tagContent_List div {font-size: 13px !important;
+    color: #ff0000;
+    :global{
+      .ant-tag-checkable{ font-size: 13px !important;color: #ff0000;  }
+    }
+  }
+}
+.searchBtn {
+  padding-top: 12px;
+  formitem{border: 0px solid red;}
+  .toolNamesItem{
+    margin-bottom: 12px !important;
+    width:60%;
+    :global{
+      .ant-form-item-label{width:33%;line-height: 32px}
+      .ant-form-item-control-wrapper{width:36%;}
+      .ant-form-item-control{line-height: 32px;}
+    }
+  }
+
+  :global {
+    .ant-row {
+      text-align: right;
+      margin-right: 0px;
+      margin-bottom: 0px !important;
+    }
+    .ant-col-24{
+      .ant-form-item:nth-child(3){
+        margin-right: 0;
+      }
+    }
+  }
+  .submitButtons {
+  }
+  .searchBtn {
+    padding-top: 0;
+  }
+  .search_btn{
+    margin-right: 0px;
+    padding: 0 24px;
+    margin-left: 24px;
+
+  }
+}
+.coverCardList .searchBtn{
+  padding-top: 0px !important;
+  margin-top: 24px;
+  :global{
+    .ant-form-item-control-wrapper .ant-form-item-control{line-height: 32px;}
+    .ant-form-item:nth-child(2){margin-right: 0px !important;}
+  }
+}
+
+.coverflow {
+  :global {
+    .gutter-box {
+      background-color: #ffffff !important;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+    }
+  }
+}
+
+:global {
+  .gutter-example .ant-row .gutter-row {
+    margin-bottom: 24px;
+  }
+  .ant-row .gutter-row > div {
+    padding: 24px;
+  }
+}
+.gutter-example .ant-row > div {
+  background: transparent;
+  border: 0;
+}
+.gutter-box {
+  background: #fff;
+  padding: 5px 0;
+}
+.autoDiv {
+  width: 100% !important;
+}
+.testststst{background-color: #ff0000;}
+:global{
+
+  .screen-xl>.ant-layout-has-sider>div:nth-child(3){border:0px;height:auto;overflow: hidden;}
+}
+.title_name{
+  color:rgba(0, 0, 0, 0.45);
+  font-size:14px;
+}
+
+.coverCardList{
+  padding-bottom: 36px;
+  background: #f0f2f5;
+}
+
+
+

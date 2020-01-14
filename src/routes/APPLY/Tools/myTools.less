@@ -1,0 +1,191 @@
+@import "~antd/lib/style/themes/default.less";
+
+.tableList {
+  .tableListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+.cancleModal{
+  :global {
+    .ant-form-item-label{
+      text-align: left!important;
+      line-height: 22px;
+    }
+  }
+}
+.redwr {
+  .row{
+    display: flex;
+  }
+  :global {
+    // .ant-btn {
+    //   color: rgba(0,0,0,.35)
+    // }    
+    .ant-form-inline .ant-row {
+      margin: 0;
+      width: unset!important;
+      display: flex;
+      .ant-form-item-control-wrapper {
+        flex: 1 1;
+      }
+      /* .ant-form-item-control-wrapper{width:79%}*/
+    }
+    .ant-form-inline .ant-row .ant-col-md-8 {
+      padding-left: 0 !important;
+    }
+    .ant-form-item-control-wrapper {
+      width: 30%;
+    }
+  }
+  .lastRow{
+    margin-top: -3px!important;
+  }
+}
+
+.col {
+  flex: 1;
+  margin-right: 100px;
+}
+@media (max-width:1200px) {
+  .col {
+    margin-right: 40px;
+  }
+}
+.col:last-child {
+  margin-right: 0;
+}
+/**/
+.ccmodal {
+  border: 1px solid;
+}
+
+.tableListForm {
+  :global {
+
+    .ant-form-item {
+      margin-bottom: 24px;
+      margin-right: 0;
+      display: flex;
+      > .ant-form-item-label {
+        width: auto;
+        line-height: 32px;
+        padding-right: 8px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    border: 1px solid red;
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}
+
+a,
+input,
+p,
+div,
+body,
+td,
+label,
+// table {
+//   font-family: SimSun, Times New Roman, Arial Black !important;
+// }
+span {
+  // font-family: SimHei, Arial !important;
+}
+/*:global {
+  .ant-table-thead > tr > th{font-family:SimHei ,Arial !important;}
+}*/
+.paginationBox {
+  padding-top: 24px;
+}
+.searchBar {
+  float: right;
+  margin: 21px 0 23px;
+}
+.hiddenCloumn {
+  border: 0px;
+  table th:first-child,
+  table td:first-child {
+    display: none;
+  }
+}
+
+.principals{border:0px;
+:global{
+  .ant-form-item-children  .ant-select-enabled{width: 100% !important;}
+}
+}
+.editSort{
+  margin:0 12px 0 -12px;
+  :global{
+     .ant-form-item-control-wrapper{width: 100%;}
+    div.ant-form-item{
+      margin-bottom: 0px;
+    }
+   }
+}
+.rejectItem{
+  :global{
+    .ant-btn-primary,.ant-btn-primary:hover,.ant-btn-primary:active{
+      background: #ff0000;
+    }
+
+  }
+}
+.toolsManagerTable{
+  :global{
+    .ant-table-thead > tr > th:nth-child(1) .ant-table-column-sorter{ left:3.8em; }
+    .ant-table-thead > tr > th:nth-child(1) , .ant-table-tbody > tr > td:nth-child(1){ padding-left:12px !important; }
+    .ant-table-thead > tr > th:nth-child(6) .ant-table-column-sorter{ left:0px;text-indent: 1em; }
+    .ant-table-thead > tr > th:nth-child(7) .ant-table-column-sorter{right:0;left:5.5em;}
+    .ant-table-thead > tr > th:nth-child(1) .ant-table-column-sorter{right:0;left:3.5em;}
+  }
+}
+.del_Icon{
+  color: #FAAD14;font-size:18px;margin-right:12px;
+}
+.taskWaper{
+  border:0;
+  :global{
+    .ant-form-item-children{
+      .ant-calendar-picker{width:100% !important;}
+    }
+
+  }
+}
+.failList{
+  :global{
+    .ant-form-horizontal{
+      .ant-col-8:nth-child(2){
+        .ant-form-item-control-wrapper{
+          .ant-calendar-picker{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}

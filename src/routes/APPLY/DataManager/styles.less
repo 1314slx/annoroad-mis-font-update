@@ -1,0 +1,125 @@
+@import "~antd/lib/style/themes/default.less";
+.myDataPage {
+  margin: 0;
+  position: relative;
+  background: #fff;
+  padding: 32px;
+  min-height: 75vh;
+  margin-bottom: 12px;
+  table tbody td>span{
+    /*width:100% !important;
+    display: inline-block;*/
+  }
+  thead th:nth-last-child(2),
+  tbody td:nth-last-child(2){
+    text-align: right;
+    padding-right: 45px!important;
+  }
+  // table tbody td{
+  //   span:nth-child(2){
+  //     i{
+  //       float: left;
+  //      /* line-height: 24px;*/
+  //     }
+
+  //   }
+  // }
+
+  > button {
+    margin-left: 14px;
+  }
+
+  .searchNav {
+    min-width: 20em;
+    position: absolute;
+    right: 32px;
+    top: 32px;
+
+  }
+  .progressLine{
+    margin-top: 27px;
+  }
+  .newFolderInput{
+    width: 300px;
+    height: 32px;
+    border-radius: 4px;
+    border-width: 1px;
+    //border-style: 1px;
+    border-color: rgba(217, 217, 217, 1);
+  }
+  .ant-table-thead > tr > th:first-child, .ant-table-tbody > tr > td:first-child{
+    padding:14px 12px 14px 0px !important;
+  }
+  :global{
+
+    .ant-spin-nested-loading > div > .ant-spin .ant-spin-text,.ant-spin-nested-loading > div > .ant-spin{
+      position: fixed;
+      left:0;
+      top:50%
+
+    }
+    .ant-spin-nested-loading > div > .ant-spin{
+      top:26%
+    }
+    @media screen and (min-width: 1670px) and (max-width: 1900px){
+      .ant-spin-nested-loading > div > .ant-spin .ant-spin-text{ top:42% ; }
+      .ant-spin-nested-loading > div > .ant-spin{ top:16% }
+
+    }
+    @media screen and (min-width: 1380px) and (max-width: 1670px){
+      .ant-spin-nested-loading > div > .ant-spin .ant-spin-text{ top:45% ;}
+      .ant-spin-nested-loading > div > .ant-spin{ top:16% }
+    }
+    @media screen and (min-width: 1000px) and (max-width: 1380px){
+      .ant-spin-nested-loading > div > .ant-spin .ant-spin-text{ top:45% ;}
+      .ant-spin-nested-loading > div > .ant-spin{ top:10% }
+    }
+  }
+  .top_btnMenu{
+    display: flex;
+  }
+}
+
+.fileNameIcon{
+  float: left;
+  svg{margin-top: 3px;}
+}
+
+.marginTop{
+  margin-top: 63px;
+}
+.renameForm{
+  :global{
+    .ant-form-item-label{display: none;}
+  }
+}
+.deleteModal{
+  font-size: 16px;
+  color: rgba(0,0,0,.85);
+  .deleteModalItem{
+    color: rgb(250, 173, 20);
+    font-size: 22px;
+    margin-right: 12px;
+  }
+}
+.progressItem{
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 12px;
+  :global{
+    .ant-progress{
+      width:80%;float: left;
+      height: 25px;
+      line-height: 25px;
+      .ant-progress-outer .ant-progress-inner .ant-progress-bg{
+        height:32px;line-height: 32px;
+      }
+    }
+    .ant-progress-outer .ant-progress-inner .ant-progress-bg{
+      height:32px;line-height: 32px;
+    }
+  }
+}
+.progressBtn{
+  float:right;width:18%;
+}

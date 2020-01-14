@@ -1,0 +1,64 @@
+.taskDetail_war {
+  border: 0px solid red;
+  :global {
+    @media screen and (max-width: 1980px) {
+      .ant-steps-item-title{
+        font-size:14px
+      }
+    }
+    .ant-card-head-title {
+      font-weight: 600;
+      padding: 15px 0;
+    }
+    .ant-card-wider-padding .ant-card-body {
+      padding: 29px 32px 0;
+    }
+    .ant-steps-item-title {
+      color: rgba(0, 0, 0, 0.847)!important;
+    }
+    .ant-steps-label-vertical .ant-steps-item-content .ant-steps-item-description{
+      margin-top: 10px;
+      text-align: left;
+      padding-left: 32px;
+      width: 130%;
+      margin-bottom: 20px;
+      color: rgba(0, 0, 0, 0.35);
+    }
+    .ant-steps-label-vertical .ant-steps-item:last-child .ant-steps-item-content .ant-steps-item-description{
+      text-align: right;
+      padding-left: 0;
+      margin-left: -80px;
+    }
+  }
+}
+
+.noCardHead {
+  .tabContent,.tabContentOut{  max-height: 40vh;overflow: auto;text-indent: 2em; min-height: 10vh; }
+  .tabContentOut{ text-indent: 0;margin-left: 2em; }
+  :global {
+    .ant-card-body {
+      padding: 8px 0px 0!important;
+    }
+    .ant-tabs-bar {
+      padding-left: 16px;
+    }
+    .ant-tabs-nav {
+      padding-bottom: 6px;
+    }
+  }
+
+}
+
+.thirdColLeft {
+  :global {
+    .ant-table-thead > tr > th:nth-child(3),
+    .ant-table-tbody > tr > td:nth-child(3){
+      text-align: right;
+      padding-right: 160px!important;
+    }
+  }
+}
+
+.outdir{
+  word-break: break-all;
+}

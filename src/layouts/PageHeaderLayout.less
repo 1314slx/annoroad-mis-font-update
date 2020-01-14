@@ -1,0 +1,26 @@
+@import "~antd/lib/style/themes/default.less";
+
+.content {
+  margin: 24px 24px 0; /*
+  padding: 32px;
+  background-color: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;*/
+  height: 100%;
+  //padding-bottom: 4em;
+  //min-height:80vh;
+}
+.wrapperClassName {
+  border: 2px solid red;
+}
+@media screen and (max-width: @screen-sm) {
+  .content {
+    margin: 24px 0 0;
+  }
+}
+:global {
+  .ant-layout-footer {
+    display: none;
+  }
+}

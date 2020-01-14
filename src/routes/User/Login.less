@@ -1,0 +1,55 @@
+@import "~antd/lib/style/themes/default.less";
+
+.main {
+  width: 368px;
+  margin: 0 auto;
+
+  .icon {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.2);
+    margin-left: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+  .tabs {
+    font-size: 16px;
+    color: #ff0000;
+  }
+  .other {
+    text-align: left;
+    margin-top: 24px;
+    line-height: 22px;
+
+    .register {
+      float: right;
+    }
+  }
+  .autoLogin {
+    margin-bottom: 24px;
+  }
+  .loginContent{
+    border:0px;
+    :global{
+      .ant-form-item-control-wrapper{width:100%}
+    }
+  }
+}
+.desc {
+  color: @text-color-secondary;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin: 24px 0 50px 0;
+  color: rgba(0, 0, 0, 0.65);
+}
+.bturl {
+  margin-bottom: 50px;
+  height: 20px;
+}
+
+

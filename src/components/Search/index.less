@@ -1,0 +1,27 @@
+.col {
+    display: flex;
+    flex: 4;
+    margin-top: -6px;
+    :global{
+        .ant-form-item {
+            display: flex!important;
+            margin-right: 90px;
+        }
+        .ant-form-item-control-wrapper {
+            flex: 1;
+        }
+        .ant-form-item {
+            margin-bottom: 17px!important;
+        }
+    }
+}
+.col:last-child {
+    margin-right: 0;
+    flex: 4;
+    :global{
+        .ant-form-item {
+            width: 100%;
+            margin-right: 0px;
+        }
+    }
+}
