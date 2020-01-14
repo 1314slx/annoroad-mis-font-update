@@ -49,7 +49,12 @@ export default class TaskTest extends Component {
     );
   }
 
-  // 删除
+  /**
+   * 删除
+   * @param id
+   * @param type
+   * @param c_status
+   */
   handleDelete = (id,type,c_status) => {
     this.setState({
       taskInfo:id,

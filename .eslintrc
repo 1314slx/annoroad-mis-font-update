@@ -1,0 +1,64 @@
+{
+
+  "parser": "babel-eslint",
+  "env": {
+    //环境定义了预定义的全局变量。更多在官网查看
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "amd": true,
+    "es6": true,
+    "mocha": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  /**
+     * "off" 或 0 - 关闭规则
+     * "warn" 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出),
+     * "error" 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
+     */
+  "rules": {
+    "no-console": 0,//
+    "arrow-body-style": 1,//要求箭头函数体使用大括号
+    "consistent-return": [0],//// 要求 return 语句要么总是指定返回的值，要么不指定
+    //"generator-star-spacing": [0],
+    "global-require": [1],//// 要求 require() 出现在顶层模块作用域中
+    "import/extensions": [0],
+    "import/no-extraneous-dependencies": [0],
+    "import/no-unresolved": [0],
+    "import/prefer-default-export": [0],
+    "jsx-a11y/no-static-element-interactions": [0],
+    "no-bitwise": [0],//禁用按位运算符
+    "no-else-return": [0],//禁止 if 语句中有 return 之后有 else
+    "no-nested-ternary": [0],
+    "no-useless-escape": [0],
+    "no-restricted-syntax": [0],
+    "no-use-before-define": [0],
+    "react/forbid-prop-types": [0],
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "react/jsx-no-bind": [0],
+    "react/prefer-stateless-function": [0],
+    "react/prop-types": [0],
+    "require-yield": [1]
+  },
+  "parserOptions": {
+    // ECMAScript 版本
+    "ecmaVersion": 6,
+    "sourceType": "module", //设置为 "tool-upload" (默认) 或 "module"（如果你的代码是 ECMAScript 模块)。
+    //想使用的额外的语言特性:
+    "ecmaFeatures": {
+      // 允许在全局作用域下使用 return 语句
+      "globalReturn": true,
+      // impliedStric
+      "impliedStrict": true,
+      // 启用 JSX
+      "jsx": true,
+      "modules": true
+    }
+  }
+}
